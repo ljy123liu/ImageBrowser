@@ -28,25 +28,26 @@
     }
     CGFloat marginX = 15;
     CGFloat marginY = 15;
-    CGFloat buttonW = (DEF_SCREEN_WIDTH - marginX * 5) / 4;
-    CGFloat buttonH = buttonW;
     NSInteger col = 4;
     NSInteger row = 2;
-    self.backgroundColor = [UIColor whiteColor];
+    CGFloat buttonW = (DEF_SCREEN_WIDTH - marginX * (col + 1)) / col;
+    CGFloat buttonH = buttonW;
+    
     for (int i = 0; i <= self.images.count; i++) {
         if (i == 8) {
             return;
         }
-        
+        //改变frame
         CGRect rect = self.frame;
-        if (i < 4) {
+        if (i < col) {
             rect.size.height = self.height;
         }else {
             rect.size.height = 2 * self.height - 15;
         }
         self.frame = rect;
+        
         UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(i%col*(buttonW + marginX) + marginX, i/col*(buttonW + marginY)+ marginY , buttonW, buttonH)];
-        [button addTarget:self action:@selector(addImage:) forControlEvents:UIControlEventTouchUpInside];
+        [button addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
         if (i < self.images.count) {
             [button setBackgroundImage:self.images[i] forState:UIControlStateNormal];
         }else {
@@ -54,6 +55,8 @@
         }
         button.tag = 10 + i;
         [self addSubview:button];
+        
+        //当没有图片的时候添加提示
         if (self.images.count == 0 && self.tips.length != 0) {
             CGSize tipsSize = [self.tips sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12]}];
             UILabel *tips = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(button.frame)+15, button.center.y - tipsSize.height/2, tipsSize.width, tipsSize.height)];
@@ -70,9 +73,9 @@
     [self setNeedsLayout];
 }
 
-- (void)addImage:(UIButton *)btn {
+- (void)clickButton:(UIButton *)btn {
     
-    if ([btn.currentBackgroundImage isEqual:[UIImage imageNamed:@"paizhao" ]]) {
+    if ([btn.currentBackgroundImage isEqual:[UIImage imageNamed:@"paizhao"]]) {
         if (self.delegate) {
             [self.delegate addimage];
         }

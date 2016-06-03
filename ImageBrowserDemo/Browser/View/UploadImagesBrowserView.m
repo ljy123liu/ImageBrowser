@@ -31,51 +31,36 @@
     CGFloat buttonW = (DEF_SCREEN_WIDTH - marginX * 5) / 4;
     CGFloat buttonH = buttonW;
     NSInteger col = 4;
-//    NSInteger row = 2;
-    if (self.images.count < 4) {
-        for (int i = 0; i <= self.images.count; i++) {
-            
-            UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(marginX + i * (buttonW + marginX) , marginY, buttonW, buttonH)];
-            [button addTarget:self action:@selector(addImage:) forControlEvents:UIControlEventTouchUpInside];
-            if (i < self.images.count) {
-                [button setBackgroundImage:self.images[i] forState:UIControlStateNormal];
-            }else {
-                [button setBackgroundImage:[UIImage imageNamed:@"paizhao"] forState:UIControlStateNormal];
-            }
-            button.showsTouchWhenHighlighted = NO;
-            button.tag = 10 + i;
-            [self addSubview:button];
-            if (self.images.count == 0 && self.tips.length != 0) {
-                CGSize tipsSize = [self.tips sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12]}];
-                UILabel *tips = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(button.frame)+15, button.center.y - tipsSize.height/2, tipsSize.width, tipsSize.height)];
-                tips.text = self.tips;
-                tips.font = [UIFont systemFontOfSize:12];
-                tips.textColor = [UIColor lightGrayColor];
-                [self addSubview:tips];
-            }
-            CGRect rect = self.frame;
-            rect.size.height = self.height;
-            self.frame = rect;
+    NSInteger row = 2;
+    self.backgroundColor = [UIColor whiteColor];
+    for (int i = 0; i <= self.images.count; i++) {
+        if (i == 8) {
+            return;
         }
-    }
-    else if (self.images.count >= 4 && self.images.count <= 8) {
+        
         CGRect rect = self.frame;
-        rect.size.height = 2 * self.height - 15;
+        if (i < 4) {
+            rect.size.height = self.height;
+        }else {
+            rect.size.height = 2 * self.height - 15;
+        }
         self.frame = rect;
-        self.backgroundColor = [UIColor whiteColor];
-        for (int i = 0; i <= self.images.count; i++) {
-            if (i == 8) {
-                return;
-            }
-            UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(i%col*(buttonW + marginX) + marginX, i/col*(buttonW + marginX)+ marginX , buttonW, buttonH)];
-            [button addTarget:self action:@selector(addImage:) forControlEvents:UIControlEventTouchUpInside];
-            if (i < self.images.count) {
-                [button setBackgroundImage:self.images[i] forState:UIControlStateNormal];
-            }else {
-                [button setBackgroundImage:[UIImage imageNamed:@"paizhao"] forState:UIControlStateNormal];
-            }
-            button.tag = 10 + i;
-            [self addSubview:button];
+        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(i%col*(buttonW + marginX) + marginX, i/col*(buttonW + marginY)+ marginY , buttonW, buttonH)];
+        [button addTarget:self action:@selector(addImage:) forControlEvents:UIControlEventTouchUpInside];
+        if (i < self.images.count) {
+            [button setBackgroundImage:self.images[i] forState:UIControlStateNormal];
+        }else {
+            [button setBackgroundImage:[UIImage imageNamed:@"paizhao"] forState:UIControlStateNormal];
+        }
+        button.tag = 10 + i;
+        [self addSubview:button];
+        if (self.images.count == 0 && self.tips.length != 0) {
+            CGSize tipsSize = [self.tips sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12]}];
+            UILabel *tips = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(button.frame)+15, button.center.y - tipsSize.height/2, tipsSize.width, tipsSize.height)];
+            tips.text = self.tips;
+            tips.font = [UIFont systemFontOfSize:12];
+            tips.textColor = [UIColor lightGrayColor];
+            [self addSubview:tips];
         }
     }
 }

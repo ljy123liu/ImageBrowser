@@ -148,9 +148,9 @@
 		2D0982C31D017DAD00652642 /* Browser */ = {
 			isa = PBXGroup;
 			children = (
+				2DB530281D018895008DC16A /* View */,
 				2DB5302A1D0188B9008DC16A /* Controller */,
 				2DB530291D0188AA008DC16A /* Tool */,
-				2DB530281D018895008DC16A /* View */,
 				2DB530271D01845E008DC16A /* images */,
 			);
 			path = Browser;

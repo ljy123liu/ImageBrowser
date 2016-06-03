@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "UploadImageViewController.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    button.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:button];
+    [button setTitle:@"相册浏览器" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)buttonClick {
+    UploadImageViewController *upload = [UploadImageViewController new];
+    [self.navigationController pushViewController:upload animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

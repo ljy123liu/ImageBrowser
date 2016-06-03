@@ -14,6 +14,20 @@
 		2D09829F1D017CC700652642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D09829E1D017CC700652642 /* Assets.xcassets */; };
 		2D0982A21D017CC700652642 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0982A01D017CC700652642 /* LaunchScreen.storyboard */; };
 		2D0982AD1D017CC700652642 /* ImageBrowserDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0982AC1D017CC700652642 /* ImageBrowserDemoTests.m */; };
+		2D0982B91D017D7700652642 /* UploadImagesBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0982B81D017D7700652642 /* UploadImagesBrowserView.m */; };
+		2D0982BE1D017D8900652642 /* UploadImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0982BB1D017D8900652642 /* UploadImageViewController.m */; };
+		2D0982BF1D017D8900652642 /* ImagesBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0982BD1D017D8900652642 /* ImagesBrowserViewController.m */; };
+		2D0982C21D017DA100652642 /* CallingCameraAndLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0982C11D017DA100652642 /* CallingCameraAndLibrary.m */; };
+		2D0982C61D017DF600652642 /* BLTNaviBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0982C51D017DF600652642 /* BLTNaviBar.m */; };
+		2DB530181D0183AE008DC16A /* paizhao.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB530151D0183AE008DC16A /* paizhao.png */; };
+		2DB530191D0183AE008DC16A /* paizhao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB530161D0183AE008DC16A /* paizhao@2x.png */; };
+		2DB5301A1D0183AE008DC16A /* paizhao@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB530171D0183AE008DC16A /* paizhao@3x.png */; };
+		2DB5301E1D018405008DC16A /* 3fanhui@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5301B1D018405008DC16A /* 3fanhui@3x.png */; };
+		2DB5301F1D018405008DC16A /* 3fanhui@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5301C1D018405008DC16A /* 3fanhui@2x.png */; };
+		2DB530201D018405008DC16A /* 3fanhui.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5301D1D018405008DC16A /* 3fanhui.png */; };
+		2DB530241D01841D008DC16A /* 白色删除按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB530211D01841D008DC16A /* 白色删除按钮.png */; };
+		2DB530251D01841D008DC16A /* 白色删除按钮@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB530221D01841D008DC16A /* 白色删除按钮@2x.png */; };
+		2DB530261D01841D008DC16A /* 白色删除按钮@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB530231D01841D008DC16A /* 白色删除按钮@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +54,25 @@
 		2D0982A81D017CC700652642 /* ImageBrowserDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageBrowserDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0982AC1D017CC700652642 /* ImageBrowserDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserDemoTests.m; sourceTree = "<group>"; };
 		2D0982AE1D017CC700652642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D0982B71D017D7700652642 /* UploadImagesBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImagesBrowserView.h; sourceTree = "<group>"; };
+		2D0982B81D017D7700652642 /* UploadImagesBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImagesBrowserView.m; sourceTree = "<group>"; };
+		2D0982BA1D017D8900652642 /* UploadImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageViewController.h; sourceTree = "<group>"; };
+		2D0982BB1D017D8900652642 /* UploadImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImageViewController.m; sourceTree = "<group>"; };
+		2D0982BC1D017D8900652642 /* ImagesBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesBrowserViewController.h; sourceTree = "<group>"; };
+		2D0982BD1D017D8900652642 /* ImagesBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesBrowserViewController.m; sourceTree = "<group>"; };
+		2D0982C01D017DA100652642 /* CallingCameraAndLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallingCameraAndLibrary.h; sourceTree = "<group>"; };
+		2D0982C11D017DA100652642 /* CallingCameraAndLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallingCameraAndLibrary.m; sourceTree = "<group>"; };
+		2D0982C41D017DF600652642 /* BLTNaviBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTNaviBar.h; sourceTree = "<group>"; };
+		2D0982C51D017DF600652642 /* BLTNaviBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTNaviBar.m; sourceTree = "<group>"; };
+		2DB530151D0183AE008DC16A /* paizhao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paizhao.png; sourceTree = "<group>"; };
+		2DB530161D0183AE008DC16A /* paizhao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paizhao@2x.png"; sourceTree = "<group>"; };
+		2DB530171D0183AE008DC16A /* paizhao@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paizhao@3x.png"; sourceTree = "<group>"; };
+		2DB5301B1D018405008DC16A /* 3fanhui@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3fanhui@3x.png"; sourceTree = "<group>"; };
+		2DB5301C1D018405008DC16A /* 3fanhui@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3fanhui@2x.png"; sourceTree = "<group>"; };
+		2DB5301D1D018405008DC16A /* 3fanhui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3fanhui.png; sourceTree = "<group>"; };
+		2DB530211D01841D008DC16A /* 白色删除按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "白色删除按钮.png"; sourceTree = "<group>"; };
+		2DB530221D01841D008DC16A /* 白色删除按钮@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "白色删除按钮@2x.png"; sourceTree = "<group>"; };
+		2DB530231D01841D008DC16A /* 白色删除按钮@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "白色删除按钮@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +114,7 @@
 		2D0982911D017CC700652642 /* ImageBrowserDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2D0982C31D017DAD00652642 /* Browser */,
 				2D0982951D017CC700652642 /* AppDelegate.h */,
 				2D0982961D017CC700652642 /* AppDelegate.m */,
 				2D0982981D017CC700652642 /* ViewController.h */,
@@ -109,6 +143,40 @@
 				2D0982AE1D017CC700652642 /* Info.plist */,
 			);
 			path = ImageBrowserDemoTests;
+			sourceTree = "<group>";
+		};
+		2D0982C31D017DAD00652642 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				2DB530271D01845E008DC16A /* images */,
+				2D0982C41D017DF600652642 /* BLTNaviBar.h */,
+				2D0982C51D017DF600652642 /* BLTNaviBar.m */,
+				2D0982C01D017DA100652642 /* CallingCameraAndLibrary.h */,
+				2D0982C11D017DA100652642 /* CallingCameraAndLibrary.m */,
+				2D0982B71D017D7700652642 /* UploadImagesBrowserView.h */,
+				2D0982B81D017D7700652642 /* UploadImagesBrowserView.m */,
+				2D0982BA1D017D8900652642 /* UploadImageViewController.h */,
+				2D0982BB1D017D8900652642 /* UploadImageViewController.m */,
+				2D0982BC1D017D8900652642 /* ImagesBrowserViewController.h */,
+				2D0982BD1D017D8900652642 /* ImagesBrowserViewController.m */,
+			);
+			name = Browser;
+			sourceTree = "<group>";
+		};
+		2DB530271D01845E008DC16A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				2DB530211D01841D008DC16A /* 白色删除按钮.png */,
+				2DB530221D01841D008DC16A /* 白色删除按钮@2x.png */,
+				2DB530231D01841D008DC16A /* 白色删除按钮@3x.png */,
+				2DB5301B1D018405008DC16A /* 3fanhui@3x.png */,
+				2DB5301C1D018405008DC16A /* 3fanhui@2x.png */,
+				2DB5301D1D018405008DC16A /* 3fanhui.png */,
+				2DB530151D0183AE008DC16A /* paizhao.png */,
+				2DB530161D0183AE008DC16A /* paizhao@2x.png */,
+				2DB530171D0183AE008DC16A /* paizhao@3x.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +260,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D0982A21D017CC700652642 /* LaunchScreen.storyboard in Resources */,
+				2DB530241D01841D008DC16A /* 白色删除按钮.png in Resources */,
+				2DB5301F1D018405008DC16A /* 3fanhui@2x.png in Resources */,
 				2D09829F1D017CC700652642 /* Assets.xcassets in Resources */,
+				2DB5301A1D0183AE008DC16A /* paizhao@3x.png in Resources */,
+				2DB5301E1D018405008DC16A /* 3fanhui@3x.png in Resources */,
+				2DB530201D018405008DC16A /* 3fanhui.png in Resources */,
+				2DB530181D0183AE008DC16A /* paizhao.png in Resources */,
+				2DB530251D01841D008DC16A /* 白色删除按钮@2x.png in Resources */,
+				2DB530261D01841D008DC16A /* 白色删除按钮@3x.png in Resources */,
 				2D09829D1D017CC700652642 /* Main.storyboard in Resources */,
+				2DB530191D0183AE008DC16A /* paizhao@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D09829A1D017CC700652642 /* ViewController.m in Sources */,
+				2D0982BF1D017D8900652642 /* ImagesBrowserViewController.m in Sources */,
 				2D0982971D017CC700652642 /* AppDelegate.m in Sources */,
+				2D0982B91D017D7700652642 /* UploadImagesBrowserView.m in Sources */,
+				2D0982C61D017DF600652642 /* BLTNaviBar.m in Sources */,
+				2D0982BE1D017D8900652642 /* UploadImageViewController.m in Sources */,
+				2D0982C21D017DA100652642 /* CallingCameraAndLibrary.m in Sources */,
 				2D0982941D017CC700652642 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImageBrowserDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WanJianTechnology.ImageBrowserDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImageBrowserDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WanJianTechnology.ImageBrowserDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -400,6 +484,7 @@
 				2D0982B31D017CC700652642 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D0982B41D017CC700652642 /* Build configuration list for PBXNativeTarget "ImageBrowserDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +493,7 @@
 				2D0982B61D017CC700652642 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

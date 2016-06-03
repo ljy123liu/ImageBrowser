@@ -115,15 +115,15 @@
 			isa = PBXGroup;
 			children = (
 				2D0982C31D017DAD00652642 /* Browser */,
+				2D0982921D017CC700652642 /* Supporting Files */,
 				2D0982951D017CC700652642 /* AppDelegate.h */,
 				2D0982961D017CC700652642 /* AppDelegate.m */,
+				2D09829E1D017CC700652642 /* Assets.xcassets */,
+				2D0982A31D017CC700652642 /* Info.plist */,
+				2D0982A01D017CC700652642 /* LaunchScreen.storyboard */,
+				2D09829B1D017CC700652642 /* Main.storyboard */,
 				2D0982981D017CC700652642 /* ViewController.h */,
 				2D0982991D017CC700652642 /* ViewController.m */,
-				2D09829B1D017CC700652642 /* Main.storyboard */,
-				2D09829E1D017CC700652642 /* Assets.xcassets */,
-				2D0982A01D017CC700652642 /* LaunchScreen.storyboard */,
-				2D0982A31D017CC700652642 /* Info.plist */,
-				2D0982921D017CC700652642 /* Supporting Files */,
 			);
 			path = ImageBrowserDemo;
 			sourceTree = "<group>";
@@ -133,7 +133,7 @@
 			children = (
 				2D0982931D017CC700652642 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		2D0982AB1D017CC700652642 /* ImageBrowserDemoTests */ = {
@@ -148,35 +148,59 @@
 		2D0982C31D017DAD00652642 /* Browser */ = {
 			isa = PBXGroup;
 			children = (
+				2DB5302A1D0188B9008DC16A /* Controller */,
+				2DB530291D0188AA008DC16A /* Tool */,
+				2DB530281D018895008DC16A /* View */,
 				2DB530271D01845E008DC16A /* images */,
-				2D0982C41D017DF600652642 /* BLTNaviBar.h */,
-				2D0982C51D017DF600652642 /* BLTNaviBar.m */,
-				2D0982C01D017DA100652642 /* CallingCameraAndLibrary.h */,
-				2D0982C11D017DA100652642 /* CallingCameraAndLibrary.m */,
-				2D0982B71D017D7700652642 /* UploadImagesBrowserView.h */,
-				2D0982B81D017D7700652642 /* UploadImagesBrowserView.m */,
-				2D0982BA1D017D8900652642 /* UploadImageViewController.h */,
-				2D0982BB1D017D8900652642 /* UploadImageViewController.m */,
-				2D0982BC1D017D8900652642 /* ImagesBrowserViewController.h */,
-				2D0982BD1D017D8900652642 /* ImagesBrowserViewController.m */,
 			);
-			name = Browser;
+			path = Browser;
 			sourceTree = "<group>";
 		};
 		2DB530271D01845E008DC16A /* images */ = {
 			isa = PBXGroup;
 			children = (
-				2DB530211D01841D008DC16A /* 白色删除按钮.png */,
-				2DB530221D01841D008DC16A /* 白色删除按钮@2x.png */,
-				2DB530231D01841D008DC16A /* 白色删除按钮@3x.png */,
-				2DB5301B1D018405008DC16A /* 3fanhui@3x.png */,
-				2DB5301C1D018405008DC16A /* 3fanhui@2x.png */,
 				2DB5301D1D018405008DC16A /* 3fanhui.png */,
+				2DB5301C1D018405008DC16A /* 3fanhui@2x.png */,
+				2DB5301B1D018405008DC16A /* 3fanhui@3x.png */,
 				2DB530151D0183AE008DC16A /* paizhao.png */,
 				2DB530161D0183AE008DC16A /* paizhao@2x.png */,
 				2DB530171D0183AE008DC16A /* paizhao@3x.png */,
+				2DB530211D01841D008DC16A /* 白色删除按钮.png */,
+				2DB530221D01841D008DC16A /* 白色删除按钮@2x.png */,
+				2DB530231D01841D008DC16A /* 白色删除按钮@3x.png */,
 			);
-			name = images;
+			path = images;
+			sourceTree = "<group>";
+		};
+		2DB530281D018895008DC16A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D0982C41D017DF600652642 /* BLTNaviBar.h */,
+				2D0982C51D017DF600652642 /* BLTNaviBar.m */,
+				2D0982B71D017D7700652642 /* UploadImagesBrowserView.h */,
+				2D0982B81D017D7700652642 /* UploadImagesBrowserView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2DB530291D0188AA008DC16A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				2D0982C01D017DA100652642 /* CallingCameraAndLibrary.h */,
+				2D0982C11D017DA100652642 /* CallingCameraAndLibrary.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		2DB5302A1D0188B9008DC16A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2D0982BC1D017D8900652642 /* ImagesBrowserViewController.h */,
+				2D0982BD1D017D8900652642 /* ImagesBrowserViewController.m */,
+				2D0982BA1D017D8900652642 /* UploadImageViewController.h */,
+				2D0982BB1D017D8900652642 /* UploadImageViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +348,7 @@
 				2D09829C1D017CC700652642 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		2D0982A01D017CC700652642 /* LaunchScreen.storyboard */ = {
@@ -332,6 +357,7 @@
 				2D0982A11D017CC700652642 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

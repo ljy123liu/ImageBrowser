@@ -3,7 +3,7 @@
 //  Baletu
 //
 //  Created by LIUYONG on 16/5/30.
-//  Copyright © 2016年 朱 亮亮. All rights reserved.
+//  Copyright © 2016年 WanJianTechnology. All rights reserved.
 //
 
 #import "CallingCameraAndLibrary.h"

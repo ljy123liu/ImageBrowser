@@ -3,7 +3,7 @@
 //  Baletu
 //
 //  Created by LIUYONG on 16/6/3.
-//  Copyright © 2016年 朱 亮亮. All rights reserved.
+//  Copyright © 2016年 WanJianTechnology. All rights reserved.
 //
 
 #import "ImagesBrowserViewController.h"

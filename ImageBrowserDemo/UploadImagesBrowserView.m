@@ -3,7 +3,7 @@
 //  Baletu
 //
 //  Created by LIUYONG on 16/6/2.
-//  Copyright © 2016年 朱 亮亮. All rights reserved.
+//  Copyright © 2016年 WanJianTechnology. All rights reserved.
 //
 
 #import "UploadImagesBrowserView.h"
@@ -31,7 +31,7 @@
     CGFloat buttonW = (DEF_SCREEN_WIDTH - marginX * 5) / 4;
     CGFloat buttonH = buttonW;
     NSInteger col = 4;
-    NSInteger row = 2;
+//    NSInteger row = 2;
     if (self.images.count < 4) {
         for (int i = 0; i <= self.images.count; i++) {
             

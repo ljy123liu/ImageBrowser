@@ -4,7 +4,7 @@
 //  Baletu
 //
 //  Created by LIUYONG on 4/21/16.
-//  Copyright © 2016 朱 亮亮. All rights reserved.
+//  Copyright © 2016 WanJianTechnology. All rights reserved.
 //
 
 #import "BLTNaviBar.h"

@@ -9,6 +9,7 @@
 #import "ImagesBrowserViewController.h"
 #import "BLTNaviBar.h"
 #import "UploadImagesBrowserView.h"
+#import "ImageBrowserCell.h"
 #define DEF_SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define DEF_SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 @interface ImagesBrowserViewController () <BLTNaviBarDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
@@ -35,12 +36,12 @@ static NSString * const identifier = @"collectionView";
     flowLayout.itemSize = CGSizeMake(DEF_SCREEN_WIDTH, DEF_SCREEN_HEIGHT - 64);
     flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     
-    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, DEF_SCREEN_WIDTH, DEF_SCREEN_HEIGHT) collectionViewLayout:flowLayout];
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, DEF_SCREEN_WIDTH, DEF_SCREEN_HEIGHT) collectionViewLayout:flowLayout];
     collectionView.dataSource = self;
     collectionView.delegate = self;
     collectionView.pagingEnabled = YES;
     collectionView.contentOffset = CGPointMake(DEF_SCREEN_WIDTH * self.imageIndex, 64);
-    [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:identifier];
+    [collectionView registerClass:[ImageBrowserCell class] forCellWithReuseIdentifier:identifier];
     [self.view addSubview:collectionView];
     
 
@@ -65,10 +66,8 @@ static NSString * const identifier = @"collectionView";
 }
 #pragma mark - UICollectionViewDelegate
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, (DEF_SCREEN_HEIGHT - 64*2 - DEF_SCREEN_WIDTH/1.75)/2, DEF_SCREEN_WIDTH, DEF_SCREEN_WIDTH/1.75)];
-    imageView.image = self.imagesArray[indexPath.row];
-    [cell addSubview:imageView];
+    ImageBrowserCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    cell.imageView.image = self.imagesArray[indexPath.row];
     return cell;
 }
 
